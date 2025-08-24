@@ -13,8 +13,43 @@ async function hashPassword(password) {
 }
 
 export default async function handler(req, res) {
-  // Handle CORS
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  console.log('🚀 Register API called:', {
+    method: req.method,
+    origin: req.headers.origin,
+    userAgent: req.headers['user-agent'],
+    timestamp: new Date().toISOString()
+  });
+
+  // Environment variable validation
+  if (!process.env.MONGODB_URI) {
+    console.error('❌ MONGODB_URI environment variable is not defined');
+    return res.status(500).json({ 
+      message: 'Server configuration error', 
+      error: 'Database connection not configured' 
+    });
+  }
+
+  if (!process.env.JWT_SECRET) {
+    console.error('❌ JWT_SECRET environment variable is not set');
+    return res.status(500).json({ 
+      message: 'Server configuration error', 
+      error: 'JWT secret not configured' 
+    });
+  }
+
+  // Handle CORS with specific origins
+  const allowedOrigins = [
+    'https://beta-vowveneus-v1.vercel.app',
+    'https://beta-vowveneus.vercel.app',
+    'http://localhost:5173',
+    'http://localhost:3000'
+  ];
+  
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+  }
+  
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   res.setHeader('Access-Control-Allow-Credentials', 'true');

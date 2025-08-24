@@ -1,5 +1,83 @@
 # VWVenus WebApp - Vercel Deployment Guide
 
+## 🚨 CRITICAL: Environment Variables Setup
+
+**If you're experiencing 500 errors on API endpoints, this is likely due to missing environment variables in Vercel.**
+
+### Required Environment Variables
+
+You **MUST** set these environment variables in your Vercel dashboard:
+
+1. **MONGODB_URI** - Your MongoDB connection string
+2. **JWT_SECRET** - A secure secret key for JWT token signing
+3. **NODE_ENV** - Set to `production`
+
+### How to Set Environment Variables in Vercel
+
+1. Go to your Vercel dashboard: https://vercel.com/dashboard
+2. Select your project (`beta-vowveneus-v1`)
+3. Go to **Settings** → **Environment Variables**
+4. Add each variable:
+
+#### MONGODB_URI
+```
+Name: MONGODB_URI
+Value: mongodb+srv://username:password@cluster.mongodb.net/database?retryWrites=true&w=majority
+Environments: Production, Preview, Development
+```
+
+#### JWT_SECRET
+```
+Name: JWT_SECRET
+Value: your-super-secret-jwt-key-here-make-it-long-and-random
+Environments: Production, Preview, Development
+```
+
+#### NODE_ENV
+```
+Name: NODE_ENV
+Value: production
+Environments: Production, Preview
+```
+
+### 🔧 After Setting Environment Variables
+
+1. **Redeploy your application** - Environment variables only take effect after redeployment
+2. Go to **Deployments** tab in Vercel
+3. Click **Redeploy** on the latest deployment
+4. Wait for deployment to complete
+5. Test your API endpoints
+
+## Troubleshooting 500 Errors
+
+### Check Vercel Function Logs
+
+1. Go to your Vercel dashboard
+2. Select your project
+3. Go to **Functions** tab
+4. Click on any API function (e.g., `api/login.js`)
+5. Check the **Invocations** and **Logs** for detailed error messages
+
+### Common Issues and Solutions
+
+#### 1. "MONGODB_URI environment variable is not defined"
+- **Solution**: Set the `MONGODB_URI` environment variable in Vercel dashboard
+- **Check**: Ensure the MongoDB connection string is correct and accessible
+
+#### 2. "JWT_SECRET environment variable is not set"
+- **Solution**: Set the `JWT_SECRET` environment variable in Vercel dashboard
+- **Check**: Use a long, random string (at least 32 characters)
+
+#### 3. "Database connection failed"
+- **Solution**: Verify your MongoDB Atlas cluster is running and accessible
+- **Check**: Ensure your MongoDB Atlas IP whitelist includes `0.0.0.0/0` for Vercel
+
+#### 4. CORS Errors
+- **Solution**: The API functions are now configured for your production domain
+- **Check**: Ensure you're accessing the app via `https://beta-vowveneus-v1.vercel.app`
+
+## Project Structure
+
 This guide will help you deploy the VWVenus WebApp to Vercel with both frontend and backend functionality.
 
 ## Project Structure
