@@ -1,0 +1,9 @@
+monal marquee peshawar	800	100	091-7242223	sahibzadagul Road Peshawar	200000	
+Imperial Grand Banquet Hall	1500	200	0345-1112223	Plot No. 10, Phase 8, Hayatabad, Peshawar	500000	info@imperialgrand.pk
+Elite Royale Wedding Palace	2000	250	0300-2223334	Diplomatic Enclave, Peshawar	750000	elite@royalepalace.pk
+Crown Regency Banquet Hall	1800	220	0333-4445556	Saddar, Peshawar	600000	crownregency@weddings.pk
+Majestic Elegance Banquet Hall	2200	300	0346-7778889	F.B. Area, Peshawar	800000	info@majesticweddings.pk
+Premier Luxury Banquet Hall	2000	260	0333-7776665	F.B. Area, Peshawar	800000	premierluxury@weddings.pk
+Grand Imperial Marquee	2800	320	0348-5554443	Diplomatic Enclave, Peshawar	100,000,0	grandimperial@weddings.pk
+Regal Elite Banquet Hall	2500	300	0347-8889990	Phase 9, Hayatabad, Peshawar	900000	regalelite@weddings.pk
+Royal Excellency Marquee	2200	280	0301-3344557	Near Shahi Bagh, Peshawar	850000	Near Shahi Bagh, Peshawar

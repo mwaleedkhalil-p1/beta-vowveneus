@@ -1,0 +1,95 @@
+Develop a complete, user-centric web platform for “Vow Venues” that simplifies the process of discovering and booking wedding halls. The website should serve both customers (couples, event planners) and venue owners by providing detailed hall listings, an intuitive booking system via email, and responsive design.
+
+Key Features and Functionalities:
+
+Homepage & Dynamic Venue Listings:
+
+Hall Data Integration:
+Import and integrate hall listings from the provided halls.txt file.
+Assume the file is a tab-delimited dataset with the following columns:
+Hall Name (e.g., “monal marquee peshawar”)
+Guest Capacity (e.g., 800)
+Additional Metric (e.g., 100 – could be seating or secondary capacity details)
+Contact Phone (e.g., “091-7242223”)
+Address (e.g., “sahibzadagul Road Peshawar”)
+Price Estimate (e.g., 200000)
+Email/Additional Info (provided in some rows)
+Display:
+Dynamically generate a list of venues showing key details like hall name, capacity, address, contact information, and price estimates.
+Search & Filtering:
+Allow users to filter listings by criteria such as location, capacity, and price range, or by hall category (e.g., High Class, Middle Class, Lower Class).
+Venue Detail Page:
+
+Comprehensive Venue Information:
+For each hall, display a detailed view including a gallery for images (to be sourced separately), full address with Google Maps integration, and detailed contact information.
+Booking Feature:
+Instead of a direct “Book Now” payment process, include a prominent “Book Now” button that opens a booking form.
+Booking Form & Email Forwarding System:
+
+User Booking Form:
+Create a form that collects essential details from the user such as:
+Full Name
+Contact Information (phone and email)
+Event Date and Time
+Number of Guests
+Special Requests or Additional Notes
+Email Forwarding:
+Upon form submission, automatically forward the booking request to the hall’s email address (as listed in the halls.txt file).
+Optionally, send an acknowledgment email to the user confirming that their request has been forwarded.
+Follow-Up Process:
+After receiving the booking request, the venue owner will verify the details, confirm availability, and coordinate with the user regarding further payment and booking confirmation processes.
+User Reviews and Ratings:
+
+Implement a star-based rating system and review feature so users can leave feedback on venues, aiding future customers in their decision-making process.
+Responsive & Accessible Design:
+
+Ensure the website is fully responsive across desktops, tablets, and smartphones.
+Follow modern accessibility guidelines (e.g., WCAG) to provide an inclusive user experience.
+Administrative Dashboard for Venue Owners:
+
+Provide a secure dashboard where hall owners can manage their listings, update hall details, review incoming booking requests, and respond to user inquiries.
+Tech Stack & Technologies:
+
+Frontend:
+
+Languages: HTML, CSS, JavaScript
+Framework: React.js for building a dynamic, responsive user interface
+Backend:
+
+Runtime & Framework: Node.js with Express.js to handle server-side operations and RESTful API development
+Database: MongoDB to store hall details (imported from halls.txt), booking records, user reviews, and other related information
+APIs & Third-Party Integrations:
+
+Mapping: Google Maps API for location display and navigation
+Email Service: Use a transactional email API (e.g., SendGrid, Nodemailer with SMTP) to forward booking requests from the website to the venue’s email address and send user acknowledgments
+Development Methodology:
+
+Agile Methodology:
+Follow an iterative process with the following phases:
+Planning & Requirement Gathering:
+Define detailed functional and non-functional requirements through discussions with potential users and venue owners.
+Analyze the halls.txt data to establish the data model for hall listings.
+Design:
+Create wireframes and mockups for the website and mobile views.
+Design system architecture with a dedicated module for importing hall data and handling email-based booking requests.
+Development:
+Frontend: Build responsive UI components using React.js.
+Backend: Set up a Node.js/Express.js server with RESTful APIs for CRUD operations and email handling.
+Database: Import the halls.txt data into MongoDB, mapping each column appropriately.
+Email Integration: Configure an email service to forward booking requests to the appropriate venue email addresses and send confirmation emails to users.
+Testing:
+Execute unit, integration, and user acceptance tests to validate functionality and overall performance.
+Deployment:
+Deploy the application on a production server, configure domain settings, and launch the website.
+Review & Iteration:
+Collect user feedback post-deployment and iterate on the design and functionalities for continuous improvement.
+Additional Notes:
+
+Data Import Module:
+Develop a robust module to parse the halls.txt file and import the data into MongoDB, ensuring proper mapping of all columns, especially the email addresses needed for booking requests.
+
+Code Quality & Documentation:
+Emphasize clean, modular code with thorough documentation. Use inline comments and maintain separate documentation to guide future maintenance and scalability.
+
+Performance & Scalability:
+Optimize the system architecture on both the frontend and backend to efficiently handle increasing data volumes and user traffic.

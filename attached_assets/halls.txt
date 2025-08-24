@@ -1,0 +1,32 @@
+Haleem Banquet	500	100	3339192469	GT Road Peshawar	80000	haleembanquet@gmail.com
+Roman Gathering Hall	600	50	3029003025	Circular Road Peshawar	23000	
+Unique Wdding Hall	800	0	3169089966	Circular Road Peshawar	40000	
+Galaxy Event Hall	600	150	0	University Road, Peshawar	100000	galaxyhallpk@gmail.com
+Al-Madina Marriage Hall	300	50	0	Ring Road, Peshawar	50000	almadinaevents@gmail.com
+Rehman Banquet Hall	250	40	0	Rehman Banquet Hall	50000	rehmanbanquetpk@gmail.com
+Sunehri Mahal Wedding Hall	800	80	0300-1122334	Near Saddar, Peshawar	80000	sunehri@wedding.pk
+Gulzar Banquet Hall	700	70	0330-9988776	Khyber Road, Peshawar	90000	gulzarbanquet@gmail.com
+Zarqa Banquet Hall	600	120	0342-5556667	University Road, Peshawar	95000	zarqa.banquet@gmail.com
+Jasmine Banquet Hall	500	100	0300-3344556	Near Saddar, Peshawar	85000	jasminehall@gmail.com
+Shalimar Banquet Hall	600	60	0302-3344556	Shah Alam Market, Peshawar	120000	shalimarbanquet@gmail.com
+Marbella Cave	1200	300	3218585815	kanal road, sher ali town, Peshawar	206500	
+Sabrina Gulbahar Banquet Hall	100	100	3028593000	Gulbahar shakarpura, Peshawar	150000	
+Casa Loma Banquet Hall	1000	100	3452662660	Saif Shopping Mall, Jamrud Road, Peshawar	146000	
+Dream Marriage Hall	1200	300	0345-5555555	Warsak Road, Peshawar	130000	info@dreammarriage.pk
+Peshawar Services Club Banquet Hall	300	50	0341-9777711	The Mall, Peshawar Cantt	150000	info@peshawarserviceclub.com
+Feroz Banquet Hall	700	100	0344-5566778	F.B. Area, Peshawar	110100	ferozbanquet@gmail.com
+Basant Banquet Hall	650	110	0332-6677889	Saddar, Peshawar	150000	basantbanquet@gmail.com
+Royal Club Wedding Hall	900	90	0344-1234567	Hayatabad, Peshawar	200000	royalclubwedding@gmail.com
+Al Noor Banquet Hall	800	120	0300-9988777	Phase 7, Hayatabad, Peshawar	250000	alnoorbanquet@gmail.com
+Gulshan Banquet Hall	750	100	0332-3344556	Saddar, Peshawar	210000	gulshanbanquet@gmail.com
+Sajjad Banquet Hall	750	100	0346-9288776	Near Saddar, Peshawar	200000	sajjadbanquet@gmail.com
+Pearl Continental Hotel Peshawar	1200	150	915276361	Khyber Rd, Peshawar	250000	peshawar.reservations@pc.com.pk
+monal marquee peshawar	800	100	091-7242223	sahibzadagul Road Peshawar	200000	
+Imperial Grand Banquet Hall	1500	200	0345-1112223	Plot No. 10, Phase 8, Hayatabad, Peshawar	500000	info@imperialgrand.pk
+Elite Royale Wedding Palace	2000	250	0300-2223334	Diplomatic Enclave, Peshawar	750000	elite@royalepalace.pk
+Crown Regency Banquet Hall	1800	220	0333-4445556	Saddar, Peshawar	600000	crownregency@weddings.pk
+Majestic Elegance Banquet Hall	2200	300	0346-7778889	F.B. Area, Peshawar	800000	info@majesticweddings.pk
+Premier Luxury Banquet Hall	2000	260	0333-7776665	F.B. Area, Peshawar	800000	premierluxury@weddings.pk
+Grand Imperial Marquee	2800	320	0348-5554443	Diplomatic Enclave, Peshawar	1000000	grandimperial@weddings.pk
+Regal Elite Banquet Hall	2500	300	0347-8888990	Phase 9, Hayatabad, Peshawar	900000	regalelite@weddings.pk
+Testing Purpose	200	200	03269000585	Testing	10000	rehansaqib.getz@gmail.com

@@ -1,0 +1,7 @@
+images
+no redirecting after submisson(isntead showing a toast)
+map of hall location and more enrich venue page
+more improved ui  '
+tips (number of hall to verify the email and further conatct process)
+payment agteway(optional musst try in copy pasiting another folder )
+checking seession in db and its working 
