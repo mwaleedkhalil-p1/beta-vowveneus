@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { VenueCard } from "@/components/VenueCard";
 import { VenueFilters } from "@/components/VenueFilters";
@@ -6,24 +6,13 @@ import { type Venue } from "@shared/schema";
 import { categorizeVenue } from "@/lib/venues";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
-import { useAuth } from "@/hooks/use-auth";
-import { useLocation } from "wouter";
-import { Button } from "@/components/ui/button";
 import { API_ENDPOINTS } from "@/lib/api-config";
 
 export default function VenuePage() {
-  const { user, isLoading: authLoading } = useAuth();
-  const [, setLocation] = useLocation();
   const [capacity, setCapacity] = useState([0, 3000]);
   const [priceRange, setPriceRange] = useState([0, 1000000]);
   const [category, setCategory] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
-
-  useEffect(() => {
-    if (!authLoading && !user) {
-      setLocation('/auth');
-    }
-  }, [user, authLoading, setLocation]);
 
   const { data: venues, isLoading } = useQuery<Venue[]>({
     queryKey: [API_ENDPOINTS.VENUES],
