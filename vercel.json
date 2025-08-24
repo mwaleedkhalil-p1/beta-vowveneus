@@ -13,14 +13,12 @@
       "destination": "/api/$1"
     },
     {
+      "source": "/hall-pictures/(.*)",
+      "destination": "/hall%20pictures%20data/$1"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/hall-pictures/(.*)",
-      "dest": "/hall%20pictures%20data/$1"
     }
   ],
   "headers": [
