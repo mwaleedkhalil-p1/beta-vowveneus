@@ -39,10 +39,18 @@ export default async function handler(req, res) {
   }
 
   try {
+    console.log('📊 Connecting to database for venues...');
     await connectToDatabase();
+    console.log('✅ Database connected successfully for venues');
     
     if (req.method === 'GET') {
+      console.log('🔍 Fetching venues from database...');
       const venues = await Venue.find({}).lean();
+      console.log(`📋 Found ${venues.length} venues in database`);
+      
+      if (venues.length > 0) {
+        console.log('📝 Sample venue:', JSON.stringify(venues[0], null, 2));
+      }
       
       // Ensure all IDs are strings in response
       const venuesWithStringIds = venues.map(venue => ({
@@ -50,12 +58,15 @@ export default async function handler(req, res) {
         _id: venue._id.toString()
       }));
       
+      console.log(`🚀 Returning ${venuesWithStringIds.length} venues to client`);
       res.status(200).json(venuesWithStringIds);
     } else {
+      console.log(`❌ Method ${req.method} not allowed for venues API`);
       res.status(405).json({ message: 'Method not allowed' });
     }
   } catch (error) {
-    console.error('Error in venues API:', error);
+    console.error('💥 Error in venues API:', error);
+    console.error('💥 Error stack:', error.stack);
     res.status(500).json({ message: 'Internal server error', error: error.message });
   }
 }
